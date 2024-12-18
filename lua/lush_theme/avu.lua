@@ -421,12 +421,7 @@ local theme = lush(function(injected_functions)
 
     -- Snacks.
     SnacksIndentScope { fg = VisualMode.fg.mix(Normal.bg, 40) },
-    SnacksIndentScope1 { fg = VisualMode.fg.mix(Normal.bg, 40) },
-    SnacksIndentScope2 { fg = NormalMode.fg.mix(Normal.bg, 40) },
-    SnacksIndentScope3 { fg = InsertMode.fg.mix(Normal.bg, 40) },
-    SnacksIndentScope4 { fg = ReplaceMode.fg.mix(Normal.bg, 40) },
-    SnacksIndentScope5 { fg = CommandMode.fg.mix(Normal.bg, 40) },
-}
+  }
 end)
 
 -- Return our parsed theme for extension or use elsewhere.
