@@ -117,7 +117,7 @@ local theme = lush(function(injected_functions)
     TabLineFill { fg = colors.fg, bg = colors.panel_border },
     TabLineSel { fg = colors.fg, bg = colors.bg },
     Title { fg = colors.keyword },
-    Visual { bg = colors.selection_inactive },
+    Visual { bg = Normal.bg.lighten(10) },
     WarningMsg { fg = colors.warning },
 
     Comment { fg = colors.comment, italic = true },
@@ -388,7 +388,7 @@ local theme = lush(function(injected_functions)
     MiniJump2dSpotUnique { fg = colors.tag, bold = true, underline = true, nocombine = true },
     MiniStarterItemPrefix { fg = colors.accent },
     MiniStarterFooter { Comment },
-    MiniStatuslineDevinfo { CursorLineNr, bg = colors.panel_bg, bold = false },
+    MiniStatuslineDevinfo { fg = colors.accent, bg = colors.panel_bg },
     MiniStatuslineFileinfo { fg = colors.fg, bg = colors.panel_bg },
     MiniStatuslineFilename { fg = colors.fg_idle, bg = colors.panel_bg },
     MiniStatuslineInactive { fg = colors.fg_idle, bg = colors.panel_bg },
