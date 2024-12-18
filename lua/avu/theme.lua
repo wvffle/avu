@@ -39,8 +39,8 @@ local theme = lush(function(injected_functions)
     Question { fg = colors.string },
     Search { fg = colors.bg, bg = colors.constant },
     CurSearch { fg = colors.bg, bg = colors.special },
-    IncSearch { fg = colors.keyword, bg = colors.selection_inactive },
-    SpecialKey { fg = colors.selection_inactive },
+    IncSearch { fg = colors.keyword, bg = colors.visual },
+    SpecialKey { fg = colors.visual },
     SpellCap { sp = colors.tag, undercurl = true },
     SpellLocal { sp = colors.keyword, undercurl = true },
     SpellBad { sp = colors.error, undercurl = true },
@@ -85,7 +85,7 @@ local theme = lush(function(injected_functions)
     DiffDelete { bg = colors.vcs_removed_bg },
     DiffRemoved { fg = colors.vcs_removed },
     DiffText { bg = colors.gutter_normal },
-    DiffChange { bg = colors.selection_inactive },
+    DiffChange { bg = colors.visual },
 
     -- LSP.
     DiagnosticError { fg = colors.error },
@@ -133,7 +133,7 @@ local theme = lush(function(injected_functions)
     -- sym'@lsp.mod.constant' { sym'@constant' },
 
     -- TreesitterContext.
-    TreesitterContext { bg = colors.selection_inactive },
+    TreesitterContext { bg = colors.visual },
 
     -- Telescope.
     TelescopePromptBorder { fg = colors.accent },
@@ -294,8 +294,8 @@ local theme = lush(function(injected_functions)
     DapUIBreakpointsCurrentLine { fg = colors.constant, bold = true },
 
     -- Visual Multi.
-    VM_Extend { bg = colors.selection_inactive },
-    VM_Cursor { bg = colors.selection_inactive, sp = colors.fg, underline = true },
+    VM_Extend { bg = colors.visual },
+    VM_Cursor { bg = colors.visual, sp = colors.fg, underline = true },
     VM_Insert { sp = colors.fg, underline = true },
     VM_Mono { fg = colors.bg, bg = colors.comment },
 
