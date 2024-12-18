@@ -186,9 +186,9 @@ local theme = lush(function(injected_functions)
     -- sym'@lsp.type.enum' { sym'@type' },
     -- sym'@lsp.type.interface' { sym'@type' },
     -- sym'@lsp.type.struct' { sym'@variable.member' },
-    sym'@lsp.type.parameter' { fg = colors.lsp_parameter },
     -- sym'@lsp.type.field' { sym'@variable.member' },
-    -- sym'@lsp.type.variable' { sym'@variable' },
+    sym'@lsp.type.parameter' { fg = colors.lsp_parameter },
+    sym'@lsp.type.variable' { sym'@variable' },
     -- sym'@lsp.type.property' { sym'@property' },
     -- sym'@lsp.type.enumMember' { sym'@constant' },
     -- sym'@lsp.type.function' { sym'@function' },
@@ -408,6 +408,14 @@ local theme = lush(function(injected_functions)
     MiniTestFail { fg = colors.error, bold = true },
     MiniTestPass { fg = colors.string, bold = true },
     MiniTrailspace { bg = colors.vcs_removed },
+
+    -- Modicator.
+    ModeCommand { fg = colors.keyword, bold = true },
+    ModeInsert { fg = colors.string, bold = true },
+    ModeNormal { fg = colors.entity, bold = true },
+    ModeOther { fg = colors.regexp, bold = true },
+    ModeReplace { fg = colors.markup, bold = true },
+    ModeVisual { fg = colors.accent, bold = true },
 }
 end)
 
