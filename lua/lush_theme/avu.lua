@@ -408,14 +408,6 @@ local theme = lush(function(injected_functions)
     MiniTestFail { fg = colors.error, bold = true },
     MiniTestPass { fg = colors.string, bold = true },
     MiniTrailspace { bg = colors.vcs_removed },
-
-    -- Modicator.
-    ModeCommand { fg = colors.keyword, bold = true },
-    ModeInsert { fg = colors.string, bold = true },
-    ModeNormal { fg = colors.entity, bold = true },
-    ModeOther { fg = colors.regexp, bold = true },
-    ModeReplace { fg = colors.markup, bold = true },
-    ModeVisual { fg = colors.accent, bold = true },
 }
 end)
 
