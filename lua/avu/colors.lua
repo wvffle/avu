@@ -43,6 +43,8 @@ local colors = {
 
   fg_idle = hsl('#565B66'),
   warning = hsl('#FF8F40'),
+
+  visual = hsl('#23344B')
 }
 
 

@@ -52,7 +52,7 @@ local theme = lush(function(injected_functions)
     TabLineFill { fg = colors.fg, bg = colors.panel_border },
     TabLineSel { fg = colors.fg, bg = colors.bg },
     Title { fg = colors.keyword },
-    Visual { CursorLine },
+    Visual { bg = colors.visual },
     WarningMsg { fg = colors.warning },
 
     Comment { fg = colors.comment, italic = true },
