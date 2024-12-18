@@ -416,7 +416,7 @@ local theme = lush(function(injected_functions)
     ReplaceMode { fg = colors.markup, bold = true },
     CommandMode { fg = colors.keyword, bold = true },
     TerminalNormalMode { NormalMode },
-    NormalMode { TerminalNormalMode },
+    TerminalMode { TerminalNormalMode },
     SelectMode { fg = colors.regexp, bold = true },
 }
 end)
