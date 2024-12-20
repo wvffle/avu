@@ -356,6 +356,9 @@ local theme = lush(function(injected_functions)
 
     -- Snacks.
     SnacksIndentScope { fg = VisualMode.fg.mix(Normal.bg, 40) },
+
+    -- Avante.
+    AvanteInlineHint { Comment }
   }
 end)
 
