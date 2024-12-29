@@ -45,6 +45,8 @@ local colors = {
   warning = hsl('#FF8F40'),
 
   visual = hsl('#23344B')
+
+  lsp_inlay_hint = hsl('#969696')
 }
 
 

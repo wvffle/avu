@@ -259,7 +259,8 @@ local theme = lush(function(injected_functions)
     LeapLabelSecondary { fg = colors.bg, bg = colors.entity },
     LeapLabelSelected { fg = colors.bg, bg = colors.tag },
 
-    -- LSP Signature.
+    -- LSP.
+    LspInlayHint { fg = colors.lsp_inlay_hint  },
     LspSignatureActiveParameter { italic = true },
 
     -- Notify.
