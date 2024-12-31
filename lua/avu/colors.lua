@@ -44,9 +44,9 @@ local colors = {
   fg_idle = hsl('#565B66'),
   warning = hsl('#FF8F40'),
 
-  visual = hsl('#23344B')
+  visual = hsl('#23344B'),
 
-  lsp_inlay_hint = hsl('#969696')
+  lsp_inlay_hint = hsl('#969696'),
 }
 
 
