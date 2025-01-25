@@ -87,6 +87,9 @@ local theme = lush(function(injected_functions)
     DiffText { bg = colors.gutter_normal },
     DiffChange { bg = colors.visual },
 
+    -- Diffview.
+    DiffviewDiffDelete { fg = colors.guide_normal },
+
     -- LSP.
     DiagnosticError { fg = colors.error },
     DiagnosticWarn { fg = colors.keyword },
