@@ -205,11 +205,14 @@ local theme = lush(function(injected_functions)
     CmpItemMenu { fg = colors.comment },
 
     -- Word under cursor.
-    CursorWord { bg = Normal.bg.lighten(7) },
+    CursorWord { bg = Normal.bg.lighten(10) },
     CursorWord0 { CursorWord },
     CursorWord1 { CursorWord },
 
-    -- Noice
+    -- LuaSnip.
+    LuasnipInsertNodePassive { CursorWord },
+
+    -- Noice.
     NoiceLspProgressTitle { fg = colors.fg },
     NoiceLspProgressClient { fg = colors.special },
 
