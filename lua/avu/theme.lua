@@ -364,6 +364,13 @@ local theme = lush(function(injected_functions)
     -- Snacks.
     SnacksIndentScope { fg = VisualMode.fg.mix(Normal.bg, 40) },
 
+    SnacksPickerGitStatus { fg = colors.accent },
+    SnacksPickerGitStatusAdded { fg = colors.vcs_added },
+    SnacksPickerGitStatusDeleted { fg = colors.vcs_removed },
+    SnacksPickerGitStatusIgnored { fg = colors.comment },
+    SnacksPickerGitStatusUntracked { SnacksPickerGitStatusIgnored },
+    SnacksPickerGitStatusStaged { fg = colors.vcs_modified },
+
     -- Avante.
     AvanteInlineHint { Comment }
   }
