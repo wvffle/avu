@@ -299,6 +299,13 @@ local theme = lush(function(injected_functions)
     DapUIBreakpointsPath { fg = colors.regexp },
     DapUIBreakpointsInfo { fg = colors.constant },
     DapUIBreakpointsCurrentLine { fg = colors.constant, bold = true },
+    DapBreakpoint { fg='#993939' },
+    DapLogPoint { fg='#61afef' },
+    DapStopped { fg='#98c379' },
+
+
+
+
 
     -- Visual Multi.
     VM_Extend { bg = colors.visual },
