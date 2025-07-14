@@ -16,7 +16,7 @@ local theme = lush(function(injected_functions)
     Cursor { fg = colors.bg, bg = colors.fg },
     CursorColumn { bg = colors.line },
     CursorLine { bg = colors.line },
-    CursorLineNr { fg = colors.accent, bg = colors.line, bold = true },
+    CursorLineNr { fg = colors.entity, bg = colors.line, bold = true },
 
     -- LineNr { fg = colors.guide_normal },
     LineNrAbove { fg = colors.entity.mix(Normal.bg, 40) },
@@ -367,6 +367,15 @@ local theme = lush(function(injected_functions)
     TerminalNormalMode { NormalMode },
     TerminalMode { TerminalNormalMode },
     SelectMode { fg = colors.regexp, bold = true },
+
+    -- Modes.nvim.
+    ModesInsert { bg = InsertMode.fg },
+    ModesReplace { bg = ReplaceMode.fg },
+    ModesDelete { ModesReplace },
+    ModesChange { ModesDelete },
+    ModesVisual { bg = VisualMode.fg },
+    ModesSelect { ModesVisual },
+
 
     -- Snacks.
     SnacksIndentScope { fg = VisualMode.fg.mix(Normal.bg, 40) },
