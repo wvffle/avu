@@ -392,7 +392,7 @@ local theme = lush(function(injected_functions)
 
     -- Render Markdown.
     RenderMarkdownH1 { fg = colors.vcs_added },
-    RenderMarkdownH2 { fg = colors.string },
+    RenderMarkdownH2 { fg = colors.tag },
     RenderMarkdownH3 { fg = colors.accent },
     RenderMarkdownH4 { fg = colors.keyword },
     RenderMarkdownH5 { fg = colors.markup },
@@ -432,30 +432,48 @@ local theme = lush(function(injected_functions)
 		MarkviewPalette0 { fg = colors.comment, bg = colors.panel_bg.mix(colors.comment, 15) },
 		MarkviewPalette0Fg { fg = MarkviewPalette0.fg },
 		MarkviewPalette0Sign { fg = MarkviewPalette0.fg },
-
     MarkviewPalette1 { fg = RenderMarkdownH1.fg, bg = colors.panel_bg.mix(RenderMarkdownH1.fg, 15) },
 		MarkviewPalette1Fg { fg = MarkviewPalette1.fg },
 		MarkviewPalette1Sign { fg = MarkviewPalette1.fg },
-
     MarkviewPalette2 { fg = RenderMarkdownH2.fg, bg = colors.panel_bg.mix(RenderMarkdownH2.fg, 15) },
 		MarkviewPalette2Fg { fg = MarkviewPalette2.fg },
 		MarkviewPalette2Sign { fg = MarkviewPalette2.fg },
-
     MarkviewPalette3 { fg = RenderMarkdownH3.fg, bg = colors.panel_bg.mix(RenderMarkdownH3.fg, 15) },
 		MarkviewPalette3Fg { fg = MarkviewPalette3.fg },
 		MarkviewPalette3Sign { fg = MarkviewPalette3.fg },
-
     MarkviewPalette4 { fg = RenderMarkdownH4.fg, bg = colors.panel_bg.mix(RenderMarkdownH4.fg, 15) },
 		MarkviewPalette4Fg { fg = MarkviewPalette4.fg },
 		MarkviewPalette4Sign { fg = MarkviewPalette4.fg },
-
     MarkviewPalette5 { fg = RenderMarkdownH5.fg, bg = colors.panel_bg.mix(RenderMarkdownH5.fg, 15) },
 		MarkviewPalette5Fg { fg = MarkviewPalette5.fg },
 		MarkviewPalette5Sign { fg = MarkviewPalette5.fg },
-
     MarkviewPalette6 { fg = RenderMarkdownH6.fg, bg = colors.panel_bg.mix(RenderMarkdownH6.fg, 15) },
 		MarkviewPalette6Fg { fg = MarkviewPalette6.fg },
 		MarkviewPalette6Sign { fg = MarkviewPalette6.fg },
+
+    MarkviewBlockQuoteDefault { MarkviewPalette0Fg },
+    MarkviewBlockQuoteSpecial { MarkviewPalette6Fg },
+    MarkviewBlockQuoteError { MarkviewPalette5Fg },
+    MarkviewBlockQuoteNote { MarkviewPalette2Fg },
+    MarkviewBlockQuoteWarn { MarkviewPalette4Fg },
+    MarkviewBlockQuoteOk { MarkviewPalette1Fg },
+
+    MarkviewCheckboxCancelled { MarkviewBlockQuoteDefault },
+    MarkviewCheckboxStriked { MarkviewCheckboxCancelled },
+    MarkviewCheckboxProgress { MarkviewBlockQuoteSpecial },
+    MarkviewCheckboxUnchecked { MarkviewBlockQuoteNote },
+    MarkviewCheckboxPending { MarkviewBlockQuoteWarn },
+    MarkviewCheckboxChecked { MarkviewBlockQuoteOk },
+
+    MarkviewSubscript { MarkviewPalette0Fg },
+    MarkviewSupscript { MarkviewPalette3Fg },
+
+    MarkviewListItemMinus { MarkviewPalette2Fg },
+    MarkviewListItemPlus { MarkviewPalette1Fg },
+    MarkviewListItemStar { MarkviewPalette4Fg },
+
+    MarkviewTableBorder { MarkviewPalette0Fg },
+    MarkviewTableHeader { MarkviewPalette2Fg, bold = true },
   }
 end)
 
