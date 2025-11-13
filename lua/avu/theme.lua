@@ -473,7 +473,10 @@ local theme = lush(function(injected_functions)
     MarkviewListItemStar { MarkviewPalette4Fg },
 
     MarkviewTableBorder { MarkviewPalette0Fg },
-    MarkviewTableHeader { MarkviewPalette2Fg, bold = true },
+    MarkviewTableHeader { MarkviewTableBorder },
+    MarkviewTableAlignLeft { MarkviewTableBorder },
+    MarkviewTableAlignCenter { MarkviewTableBorder },
+    MarkviewTableAlignRight { MarkviewTableBorder },
   }
 end)
 
