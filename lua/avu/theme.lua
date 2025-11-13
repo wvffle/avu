@@ -466,7 +466,7 @@ local theme = lush(function(injected_functions)
     MarkviewCheckboxChecked { MarkviewBlockQuoteOk },
 
     MarkviewSubscript { MarkviewPalette0Fg },
-    MarkviewSupscript { MarkviewPalette3Fg },
+    MarkviewSuperscript { MarkviewPalette6Fg },
 
     MarkviewListItemMinus { MarkviewPalette2Fg },
     MarkviewListItemPlus { MarkviewPalette1Fg },
